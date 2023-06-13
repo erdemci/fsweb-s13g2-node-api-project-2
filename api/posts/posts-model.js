@@ -18,6 +18,11 @@ function find() {
 function findById(id) {
   return db('posts').where({ id: Number(id) }).first()
 }
+/**
+ * [{title:"test",contents:"tests"},{title:"test",contents:"tests"}]
+ * 
+ */
+
 
 function insert(post) {
   return db('posts')
